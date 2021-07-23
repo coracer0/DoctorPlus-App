@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import {MaterialModule} from '@app/material.modules';
 import { SidebarModule } from './shared/components/sidebar/sidebar.module'
 import { HttpClientModule } from '@angular/common/http';
+import { PacienteComponent } from './paciente/paciente/paciente.component';
 
 
 
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PacienteComponent
   ],
   imports: [
     BrowserModule,
