@@ -8,8 +8,8 @@ export interface User {
 export interface UserResponse{
     message: string,
     token: string,
-    idUser:string,
-    user: string,
+    idUsuario:string,
+    usuario: string,
     idRol: number,
     rol: Roles
 }
