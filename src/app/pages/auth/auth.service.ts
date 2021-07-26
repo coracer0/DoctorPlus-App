@@ -70,7 +70,7 @@ export class AuthService {
 
   private handleError(err: any): Observable<never> {
     let errorMessage = 'Ocurrió un error';
-    if (err) errorMessage = `Error: ${err.message}`;
+    if (err) errorMessage = `Error: ${typeof err.error.message == 'undefined' ? err.message : err.error.message }`;
 
     this._snackBar.open(errorMessage, '', {
       duration: 6000,
