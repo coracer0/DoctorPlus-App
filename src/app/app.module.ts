@@ -11,6 +11,7 @@ import {MaterialModule} from '@app/material.modules';
 import { SidebarModule } from './shared/components/sidebar/sidebar.module'
 import { HttpClientModule } from '@angular/common/http';
 import { UtilsService } from './shared/services/util.service';
+import { PacienteComponent } from './paciente/paciente.component';
 
 
 
@@ -18,7 +19,8 @@ import { UtilsService } from './shared/services/util.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PacienteComponent
   ],
   imports: [
     BrowserModule,
