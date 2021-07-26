@@ -44,14 +44,52 @@ export class SidebarComponent implements OnInit, OnDestroy {
               ruta: '/admin/reports'
             }
           ];
-        } else if(rol == 'ventas') {
+        } else if(rol == 'medico') {
           this.lstMenu = [
             {
-              nombre: 'Otros',
-              icono: 'help_outline',
-              ruta: '/ventas/ventas'
+              nombre: 'Perfil',
+              icono: 'person',
+              ruta: '/'
+            },
+            {
+              nombre: 'Ver citas',
+              icono: 'event',
+              ruta: '/'
+            },
+            {
+              nombre: 'Agendar cita',
+              icono: 'post_add',
+              ruta: '/'
+            },
+            {
+              nombre: 'Ver expedientes',
+              icono: 'event_note',
+              ruta: '/'
+            },
+            {
+              nombre: 'Registrar paciente',
+              icono: 'person_add',
+              ruta: '/'
             }
           ];
+        } else if (rol = 'paciente'){
+          this.lstMenu = [
+            {
+              nombre: 'Perfil',
+              icono: 'person',
+              ruta: '/'
+            },
+            {
+              nombre: 'Solicitar cita',
+              icono: 'post_add',
+              ruta: '/'
+            },
+            {
+              nombre: 'Ver citas',
+              icono: 'event',
+              ruta: '/'
+            }
+          ]
         }
       });
   }
