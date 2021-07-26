@@ -1,13 +1,13 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="over">
-    <mat-toolbar color="primary">
-      <span>MenU </span>
-    </mat-toolbar>
-    <app-sidebar></app-sidebar>
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+      <mat-toolbar color="primary">
+          <span>Menu</span>
+      </mat-toolbar>
+      <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
-    <router-outlet></router-outlet>
+      <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+      <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 <app-footer></app-footer>

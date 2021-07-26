@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import {MaterialModule} from '@app/material.modules';
 import { SidebarModule } from './shared/components/sidebar/sidebar.module'
 import { HttpClientModule } from '@angular/common/http';
+import { UtilsService } from './shared/services/util.service';
 import { PacienteComponent } from './paciente/paciente.component';
 
 
@@ -29,7 +30,7 @@ import { PacienteComponent } from './paciente/paciente.component';
     SidebarModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UtilsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
