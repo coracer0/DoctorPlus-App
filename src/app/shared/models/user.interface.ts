@@ -7,7 +7,7 @@ export interface UserResponse{
     message: string;
     token: string;
     idUsuario:string;
-    usuario: string;
+    email: string;
     idRol: number;
     rol: string;
 }
